@@ -1,9 +1,10 @@
 import type {Scene} from '../engine';
 import {observatoire} from './observatoire';
+import {epeeCarteMere} from './epee-carte-mere';
 
 // Ajouter chaque nouvelle scène ici : elle devient disponible pour
 // `npm run still`, `npm run video` et Remotion Studio.
-export const scenes: Scene[] = [observatoire];
+export const scenes: Scene[] = [observatoire, epeeCarteMere];
 
 export const getScene = (id: string): Scene => {
   const s = scenes.find((sc) => sc.id === id);
